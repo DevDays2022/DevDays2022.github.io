@@ -27,6 +27,7 @@ h2 {
   font-size: 4rem;
   color: white;
   padding-bottom: 2rem;
+  font-weight: 800;
 }
 .countdown {
   border: 1px solid greenyellow;
@@ -35,6 +36,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 800;
 }
 h3 {
   font-size: 2rem;
