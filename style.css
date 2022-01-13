@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  padding: 1rem;
+  font-size: 6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: chartreuse;
+  width: max-content;
+  border-radius: 0 10px 10px 10px;
+}
