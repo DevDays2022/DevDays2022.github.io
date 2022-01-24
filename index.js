@@ -77,3 +77,11 @@ function sendMail(params){
         }
     })
 }
+
+const toggle = document.getElementsByClassName('toggle-button')
+const uwu = document.getElementsByTagName('ul')
+const card=document.getElementsByClassName('card')
+console.log(card)
+toggle[0].addEventListener('click',() =>{
+uwu[0].classList.toggle('active')
+})

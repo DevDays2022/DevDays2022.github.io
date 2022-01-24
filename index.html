@@ -12,6 +12,19 @@
     <title>DevDays2022</title>
   </head>
   <body>
+    <nav>
+      <h2>Dev Days 2022</h2>
+      <a href="#" class="toggle-button" id="rot">
+        <span></span><span></span><span></span>
+      </a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#ourTeam">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://forms.gle/oxHRV8LkrpxA2Lt26" target="_blank" style="border: 1px solid greenyellow;margin-right: 1rem;">Sponsor the Event</a></li>
+      </ul>
+    </nav>
     <canvas id="Matrix"></canvas>
     <section class="coming-soon">
       <h2>Dev Days Hackathon</h2>
@@ -41,7 +54,7 @@
     </section>
     <!-- End oF Matrix -->
     <!-- Start of Event Details -->
-    <section id="timeline">
+    <section id="events">
       <h1
         style="
           color: white;
@@ -99,7 +112,7 @@
                 <h1>Hackathon Results Announced</h1>
                 <p>
                   Congratualtions to all the participants on the 
-                  <a href="" style="text-decoration: none; color: greenyellow"
+                  <a href="#awards" style="text-decoration: none; color: greenyellow"
                     >Awards</a
                   >
                 </p>
@@ -109,6 +122,8 @@
         </div>
     </section>
     <!-- End of Event Details -->
+    <!-- Become A sponsor -->
+    <!-- End of Become A sponsor -->
     <!-- Awards -->
     <!-- <section>
       <h1
@@ -124,7 +139,7 @@
       >
         Awards
       </h1>
-      <div class="awards">
+      <div class="awards" id="awards">
         <div class="position-awards">
           <h3>Positional Awards</h3>
           <table>
@@ -179,7 +194,7 @@
     <!-- End of awards -->
     <!-- Our Team -->
     <h2 style="text-align: center">Our Team</h2>
-    <section class="card-list">
+    <section class="card-list" id="ourTeam">
       
       <article class="card">
         <header class="card-header">
@@ -367,7 +382,7 @@
 
     <!-- End of Our Team -->
     <!-- Footer -->
-    <section class="footer">
+    <section class="footer" id="contact">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
 (function() {
