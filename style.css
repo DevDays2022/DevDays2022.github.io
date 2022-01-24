@@ -5,6 +5,7 @@
 }
 section {
   border-bottom: 1px dashed greenyellow;
+  margin-top: 10rem;
 }
 * {
   margin: 0;
@@ -101,21 +102,25 @@ nav a:hover {
   nav .active {
     display: flex;
   }
+}
+@media screen and (max-width: 790px) {
   .coming-soon {
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
 }
 /* End Of Nav */
 .coming-soon {
+  margin-top: 5rem;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: max-content;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-bottom: none;
 }
 .coming-soon button:nth-child(1) {
   position: absolute;
@@ -172,6 +177,7 @@ h3 {
   padding: 0.5rem;
 }
 .skew {
+  width: min(60%, 40rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +190,6 @@ h3 {
 .event-details {
   height: 100vh;
 }
-
 .container {
   width: 100%;
   padding: 100px 0;
