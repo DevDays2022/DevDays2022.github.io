@@ -310,6 +310,12 @@ h3 {
 }
 /* end of sponsor our event */
 /* Awards */
+#awards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .awards {
   display: flex;
   justify-content: space-between;
@@ -329,6 +335,7 @@ h3 {
 }
 .special-tracks {
   flex: 1;
+  max-width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,18 +375,27 @@ tr td:nth-child(1) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   flex: 1;
   height: 200px;
 }
 .sponsors ul li img {
   width: 150px;
 }
+td a {
+  color: greenyellow;
+}
 @media only screen and (max-width: 768px) {
   .awards {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .sponsors ul {
+    flex-direction: column;
+  }
+  .special-tracks {
+    font-size: 1rem;
   }
 }
 /* End of Awards */
