@@ -20,6 +20,7 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#events">Events</a></li>
+        <li><a href="#awards">Awards</a></li>
         <li><a href="#ourTeam">Our Team</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://forms.gle/oxHRV8LkrpxA2Lt26" target="_blank" style="border: 1px solid greenyellow;margin-right: 1rem;">Sponsor the Event</a></li>
@@ -367,28 +368,30 @@
 
     <!-- End of Our Team -->
     <!-- Footer -->
-    <section class="footer" id="contact">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
 (function() {
 emailjs.init("user_4CJE2Bzgjb69e1AOC9OnH");
 })();
 </script>
-      <div class="wrapper-upper">
-        <div class="left"><h2 style="text-align: center;">Contact Us</h2>
-        <img src="./Images/dev days6.jpg" alt="">
+      <section class="footer" id="contact">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <div class="wrapper-upper">
+          <div class="left">
+          <img src="./Images/dev days6.jpg" alt="">
+          </div>
+          <div class="right">
+            <form>
+              <input type="text" id="name" placeholder="Name" name="user_name">
+              <input type="text" id="subj" placeholder="Subject" name="user_sub">
+              <input type="text" id="email" placeholder="Email" name="user_email">
+              <textarea id="message" placeholder="Message" name="message" rows="5" ></textarea>
+            </form>
+            <button onclick="sendMail()">Submit</button>
+            <p id="response"></p>
+          </div>
         </div>
-        <div class="right">
-          <form>
-            <input type="text" id="name" placeholder="Name" name="user_name">
-            <input type="text" id="subj" placeholder="Subject" name="user_sub">
-            <input type="text" id="email" placeholder="Email" name="user_email">
-            <textarea id="message" placeholder="Message" name="message" rows="5" ></textarea>
-          </form>
-          <button onclick="sendMail()">Submit</button>
-          <p id="response"></p>
-        </div>
-      </div>
+      </section>
       <div class="wrapper-lower">
         <div class="left-lower">
           <p>Link Up @</p>
@@ -411,7 +414,6 @@ emailjs.init("user_4CJE2Bzgjb69e1AOC9OnH");
         </div>
       </div>
 
-    </section>
     <!-- End of Foorter -->
   </body>
 </html>
