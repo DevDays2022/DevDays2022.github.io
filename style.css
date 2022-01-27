@@ -379,6 +379,7 @@ tr td:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .sponsors ul li {
   padding: 2rem;
