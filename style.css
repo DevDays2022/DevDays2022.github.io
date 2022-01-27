@@ -5,7 +5,6 @@
 }
 section {
   border-bottom: 1px dashed greenyellow;
-  margin-top: 10rem;
 }
 * {
   margin: 0;
@@ -186,7 +185,18 @@ h3 {
   padding: 1rem;
   background-color: black;
 }
+@media screen and (max-width: 800px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
 /* Start Event Time Line */
+#events {
+  margin-top: 5rem;
+}
 .event-details {
   height: 100vh;
 }
@@ -315,6 +325,7 @@ h3 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 1px solid greenyellow;
 }
 .awards {
   display: flex;
@@ -392,6 +403,21 @@ td a {
   }
   .sponsors ul {
     flex-direction: column;
+  }
+  th {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  td {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .awards h3 {
+    font-size: 1.5rem;
+  }
+  .sponsors ul li {
+    font-size: 1.25rem;
+    padding: 2rem;
   }
 }
 /* End of Awards */
