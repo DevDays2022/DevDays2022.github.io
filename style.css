@@ -3,8 +3,13 @@
 :root {
   --clr-foreground: #1e1f22;
 }
+body {
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
 section {
   border-bottom: 1px dashed greenyellow;
+  scroll-snap-align: start;
 }
 * {
   margin: 0;
@@ -711,12 +716,23 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-wrapper * {
+  margin: 1rem;
+}
 @media only screen and (max-width: 768px) {
   .wrapper-lower {
     flex-direction: column;
   }
+  .wrapper-lower p {
+    text-align: center;
+  }
   .center-lower {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .right-lower {
     flex-direction: column;
@@ -726,6 +742,17 @@ button:hover {
   }
   .countdown {
     width: 80%;
+  }
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-wrapper a {
+    margin: 0.5rem;
+  }
+  .logo-wrapper {
+    flex-wrap: wrap;
   }
   form {
     display: flex;
